@@ -11,7 +11,7 @@ namespace HexagonalArquitecture.Presentation.Controllers
     // This controller is an adapter that implements the IOrderService interface.
     [ApiController]
     [Route("api/orders")]
-    public class OrdersController : ControllerBase, IOrderService
+    public class OrdersController : ControllerBase, IOrderDriverPort
     {
         private readonly ICreateOrderUseCase _createOrder;
         private readonly IGetOrderByIdUseCase _getOrderById;
